@@ -1,0 +1,21 @@
+.first-row label{
+    color:black;
+    font-size:medium;
+    font-weight:bolder;
+}
+
+.first-row input{
+    width: 25px;
+}
+
+.first-row button{
+    margin-top: 10px;
+    border:solid;
+    background-color: #ce4c19;
+    border-color: #ce4c19;
+    border-radius:20px;
+    
+    color: white;
+    width:100px;
+    height: 30px;
+}
