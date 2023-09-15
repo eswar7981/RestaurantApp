@@ -1,18 +1,22 @@
+.display{
+    display:flex;
+}
 .Meals{
-    display:grid;
+   display:grid;
     background-color: white;
     border:solid;
     border-color:black;
     border-width: 1.5px;
     border-radius: 15px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 180px;
+    margin-right:180px;
     padding-left: 20px;
     margin-top: 30px;
 
 }
 
-
-.Item{
-    display:flex;
+.ad{
+    margin-left:60px;
+    margin-top: 40px;
 }
+
