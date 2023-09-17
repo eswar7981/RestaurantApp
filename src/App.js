@@ -5,24 +5,35 @@ import { Fragment, useEffect, useState } from 'react';
 import Header from './Components/Layout/Header';
 import mealimg from './images/meals.jpg'
 import AvailableMeals from './Components/Meals/AvailableMeals';
-
 import Portal from './Components/Portal/Portal';
 
 function App() {
+ 
+  const [cartButton,setCartButton]=useState(false)
+ 
+
+  const openCart=()=>{
+
+    setCartButton(true)
+  }
 
  
+  const closeCart=()=>{
+    
+    setCartButton(false)
+  }
 
   return (
    
   
     <Fragment>
-      
-      <Header/>
+     
+      <Header openCart1={openCart}/>
       
       <MealsSummary/>
-      
+     {cartButton && <Portal  onClose={closeCart}/>}
       <AvailableMeals/>
-      <Portal/>
+      
   
       
    
@@ -32,4 +43,3 @@ function App() {
 }
 
 export default App;
-
