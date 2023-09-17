@@ -1,12 +1,15 @@
 import React from 'react'
 import './HeaderCartButton.css'
 import CartIcon from '../Cart/CartIcon'
+import { useState } from 'react'
+
 
 
 export default function HeaderCartButton(props) {
+
   return (
     <div>
-        <button className='button'>
+        <button className='button' onClick={()=>props.onClick()}>
             <span className='icon'>
                 <CartIcon/>
             </span>
@@ -17,6 +20,8 @@ export default function HeaderCartButton(props) {
                 3
             </span>
         </button>
+        
+      
     </div>
   )
 }
