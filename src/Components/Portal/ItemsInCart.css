@@ -1,0 +1,31 @@
+.items {
+padding-bottom:-10p;
+display: flex;
+gap:20px
+}
+
+.cls  {
+    overflow: scroll;
+   
+    height: 300px;
+    display:grid;
+    list-style: none;
+}
+
+.items h4{
+    color:rgb(179, 82, 3);
+    
+}
+
+.items h3 {
+    font-size:medium;
+    border:solid;
+    border-radius: 5px;
+    padding: 3px 3px;
+   
+}
+
+.prod {
+    display: grid;
+    padding-left: 30px;
+}
