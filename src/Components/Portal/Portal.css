@@ -1,4 +1,7 @@
 .backdrop {
+    overflow: scroll;
+   
+    height: 300px;
     position: fixed;
     top: 0;
     left: 0;
@@ -7,8 +10,35 @@
     z-index: 20;
     background-color: rgba(54, 48, 48, 0.75);
   }
+
+  .head {
+    display: flex;
+    
+  }
+
+  .disp{
+    display: grid;
+    border:solid;
+    border-radius: 20px;
+  }
+
+  .head label{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    padding-left: 35px;
+    padding-top: 21px;
+    font-weight: bolder;
+  }
+
+  .head h4{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 460px;
+  }
+  
+
   
   .modal {
+    
     position: fixed;
     top: 20vh;
     left: 5%;
@@ -27,7 +57,12 @@
       left: calc(50% - 20rem);
     }
   }
+
+
+
   
+
+
   @keyframes slide-down {
     from {
       opacity: 1;
@@ -58,14 +93,15 @@
 }
 
 .Amount{
-
+    
     padding-top: 10px;
-    padding-left: 10px;
+    padding-left: 450px;
    display: flex;
-   gap:260px; 
+   gap:20px; 
 }
 
 .Amount label{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bolder;
 }
 
