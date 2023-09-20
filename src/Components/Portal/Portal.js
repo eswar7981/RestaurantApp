@@ -2,37 +2,19 @@ import React, { Fragment } from "react";
 import ReactDOM from "react-dom";
 import "./Portal.css";
 
-const Backdrop = (props) => {
-  return <div className="backdrop"></div>;
-};
-
-const Backdrop1 = (props) => {
-  return (
-    <div className="backdrop">
-      <div>
-        <div className="modal">
-          <div className="item">
-            <label>Sushi</label>
-          </div>
-          <div className="Amount">
-            <label>Total Amount</label>
-            <label>35.65</label>
-          </div>
-          <div className="buttons">
-            <button>close</button>
-            <button>order</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+import Backdrop1 from "./Backdrop1";
 
 const portalElem = document.getElementById("portal");
 
-function Portal() {
+function Portal(props) {
   return (
-    <Fragment>{ReactDOM.createPortal(<Backdrop1 />, portalElem)}</Fragment>
+    <Fragment>
+      {ReactDOM.createPortal(
+        <Backdrop1 onClick1={props.onClose} />,
+        portalElem
+      )}
+    </Fragment>
   );
 }
 export default Portal;
+
